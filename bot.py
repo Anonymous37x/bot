@@ -16,7 +16,7 @@ def check_gateway(url):
         print(f"Error accessing {url}: {e}")
         return None
     bsoup = BeautifulSoup(response.text, 'html.parser')
-       #Coded By @DaddyReturns
+       #Coded By @Anonymous37x
     payment_gateways = {
     'stripe': ['script', {'src': re.compile(r'.*js\.stripe\.com.*')}, {'src': re.compile(r'.*stripe.*')}],
     'paypal': ['script', {'src': re.compile(r'.*paypal.*')}, {'src': re.compile(r'.*checkout\.paypal\.com.*')}, {'src': re.compile(r'.*paypalobjects.*')}],
